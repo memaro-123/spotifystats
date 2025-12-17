@@ -78,12 +78,10 @@ if (songObj) { //if they are already in the array
     }
     albums.push(newAlbum)
   }
-} //year selector
+}
 })
 
 
-
-// When done
 jsonStream.on("end", () => {
     artists.sort((a, b) => b.plays - a.plays);
     songs.sort((a, b) => b.plays - a.plays);

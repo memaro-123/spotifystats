@@ -19,10 +19,6 @@ try {
 router.post("/processYear", (req, res) => {
   const { year } = req.body;
 
-  
-
-
-
   // Run process.js as a child
   exec(`node process.js ${year}`, (err, stdout, stderr) => {
     if (err) {

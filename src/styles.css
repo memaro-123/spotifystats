@@ -1,0 +1,42 @@
+/* App.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.top-banner {
+    background: #000000; 
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #4f4f4f; 
+}
+
+.logo {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 1000;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo i {
+    color: #1DB954;
+    font-size: 1.5rem;
+}

@@ -94,7 +94,6 @@ const App = () => {
             alt="Logo"
             style={{
               height: "30px",
-              marginLeft: "10px",
               borderRadius: "4px",
             }}
           />

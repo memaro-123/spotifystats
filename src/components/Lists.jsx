@@ -1,4 +1,4 @@
-import Comps from './Note'
+import Comps from './listMapper'
 const Lists = ({ sayYear, first10Ar, first10Al, first10So }) =>{
     return(<>
         <h3>Top 10 Artists of {sayYear}!</h3>

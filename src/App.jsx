@@ -90,7 +90,7 @@ const App = () => {
         <div className="logo">
           <i className="fab fa-spotify"></i>
           <img
-            src={logoImage} // Use the imported variable
+            src={logoImage}
             alt="Logo"
             style={{
               height: "30px",
@@ -100,20 +100,17 @@ const App = () => {
           <span>SpotifyStats</span>
         </div>
       </header>
-      <h1>SPOTIFY STATS YO</h1>
+
       {loading ? <p>loading...</p> : null}
-      {dataStatus ? (
-        <YearSearch
-          year={year}
-          onYearChange={handleYearChange}
-          onYearClick={handleYearClick}
-        />
-      ) : null}
-      <FileUpload
+      
+      {dataStatus ? (<YearSearch
+          year={year} onYearChange={handleYearChange} onYearClick={handleYearClick}/>) : null}
+          {dataStatus ? null:(<FileUpload
         redErrorText={redErrorText}
         handleFormSubmit={handleFormSubmit}
         fileInputRef={fileInputRef}
-      />
+      />)}
+      
       {dataStatus ? (
         <Lists
           sayYear={sayYear}
